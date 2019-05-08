@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="../css/common.css" type="text/css" rel="stylesheet">
+    <link href="../css/home.css" type="text/css" rel="stylesheet">
+    <link href="../css/other.css" type="text/css" rel="stylesheet">
+    
+    <!--先用线上生成的icon，最终版下载放到本地*-->
+    <link href="http://at.alicdn.com/t/font_1159422_mmfh29dwv.css" type="text/css" rel="stylesheet">
+    <link href="http://at.alicdn.com/t/font_1175656_cwnd71gvoj.css" type="text/css" rel="stylesheet">
+    <!-- 让IE8/9支持html5 -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5.min.js"></script>
+    <![endif]-->
+    <title>商品管理</title>
+</head>
+<body>
+<div id="app" class="container home clearfix">
+    <div class="top-bar" id="top-bar">
+        <div class="company-info inline">
+            <img class="logo inline" src="../images/logo.png" width="100%" height="100%" id="home-logo"/>
+            <div class="name inline">
+                <h2 class="name-cn" id="name-cn">智慧急救柜综合管理系统</h2>
+                <h2 class="name-en" id="name-en">zhi hui ji jiu gui zhong he guan li xi tong</h2>
+            </div>
+        </div>
+        <div class="operate-box inline">
+            <div class="top-search inline">
+                <a class="search-btn iconfont icon-search"></a>
+                <input class="search-input" type="text" placeholder="搜索..." value="" />
+            </div>
+            <div class="top-message inline">
+                <a class="iconfont icon-msg" href="javasctipt:;" onclick="msgShow(this);"><i class="msg-num">6</i></a>
+                <ul class="dropdown-msg anim-downbit">
+                    <li>
+                        <a href="#">
+                            <span class="msg-title inline">您有16条未读消息</span>
+                            <span class="msg-time inline">4分钟前</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="msg-title inline">3条新回复</span>
+                            <span class="msg-time inline">14分钟前</span>
+                        </a>
+                    </li>
+                    <li class="no-border">
+                        <a class="textCenter more-msg" href="#"><b>查看所有</b></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-user inline">
+                <a href="#">
+                    <img class="user-img shadowDep inline" id="user-img" src="../images/head.png" height="100%" width="100%"/>
+                    <p class="user-name inline" id="user-name">Adminstrators</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="left-nav" id="left-nav">
+        <div class="navShow">
+            <a class="navShow-Btn" href="javascript:;" onclick="leftNavShow(this);"><i class="iconfont icon-showNav"></i></a>
+        </div>
+        <ul class="navList">
+            <li class="navItem active">
+                <a class="navLink" href="#" onclick="leftNavOpen(this);">
+                    <i class="itemIcon iconfont icon-home inline"></i>
+                    <p class="itemName inline">首页</p>
+                </a>
+            </li>
+            <li class="navItem">
+                <a class="navLink" href="javascript:;" onclick="leftNavOpen(this);">
+                    <i class="itemIcon iconfont icon-goods inline"></i>
+                    <p class="itemName inline">商品管理</p>
+                    <i class="iconfont icon-down"></i>
+                </a>
+                <ul class="childList">
+                    <li class="child-item">
+                        <a href="#">管理一</a>
+                    </li>
+                    <li class="child-item">
+                        <a href="#">管理二</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navItem">
+                <a class="navLink" href="javascript:;" onclick="leftNavOpen(this);">
+                    <i class="itemIcon iconfont icon-sales inline"></i>
+                    <p class="itemName inline">代理商管理</p>
+                    <i class="iconfont icon-down"></i>
+                </a>
+                <ul class="childList">
+                    <li class="child-item">
+                        <a href="#">管理一</a>
+                    </li>
+                    <li class="child-item">
+                        <a href="#">管理二</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navItem">
+                <a class="navLink" href="javascript:;" onclick="leftNavOpen(this);">
+                    <i class="itemIcon iconfont icon-order inline"></i>
+                    <p class="itemName inline">订单管理</p>
+                    <i class="iconfont icon-down"></i>
+                </a>
+                <ul class="childList">
+                    <li class="child-item">
+                        <a href="#">管理一</a>
+                    </li>
+                    <li class="child-item">
+                        <a href="#">管理二</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navItem">
+                <a class="navLink" href="javascript:;" onclick="leftNavOpen(this);">
+                    <i class="itemIcon iconfont icon-device inline"></i>
+                    <p class="itemName inline">设备管理</p>
+                    <i class="iconfont icon-down"></i>
+                </a>
+                <ul class="childList">
+                    <li class="child-item">
+                        <a href="#">管理一</a>
+                    </li>
+                    <li class="child-item">
+                        <a href="#">管理二</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navItem">
+                <a class="navLink" href="javascript:;" onclick="leftNavOpen(this);">
+                    <i class="itemIcon iconfont icon-ziyuan inline"></i>
+                    <p class="itemName inline">自愿者管理</p>
+                    <i class="iconfont icon-down"></i>
+                </a>
+                <ul class="childList">
+                    <li class="child-item">
+                        <a href="#">管理一</a>
+                    </li>
+                    <li class="child-item">
+                        <a href="#">管理二</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navItem">
+                <a class="navLink" href="javascript:;" onclick="leftNavOpen(this);">
+                    <i class="itemIcon iconfont icon-zhishi inline"></i>
+                    <p class="itemName inline">知识管理</p>
+                    <i class="iconfont icon-down"></i>
+                </a>
+                <ul class="childList">
+                    <li class="child-item">
+                        <a href="#">管理一</a>
+                    </li>
+                    <li class="child-item">
+                        <a href="#">管理二</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navItem">
+                <a class="navLink" href="javascript:;" onclick="leftNavOpen(this);">
+                    <i class="itemIcon iconfont icon-ads inline"></i>
+                    <p class="itemName inline">广告管理</p>
+                    <i class="iconfont icon-down"></i>
+                </a>
+                <ul class="childList">
+                    <li class="child-item">
+                        <a href="#">管理一</a>
+                    </li>
+                    <li class="child-item">
+                        <a href="#">管理二</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navItem">
+                <a class="navLink" href="javascript:;" onclick="leftNavOpen(this);">
+                    <i class="itemIcon iconfont icon-baobiao inline"></i>
+                    <p class="itemName inline">报表管理</p>
+                    <i class="iconfont icon-down"></i>
+                </a>
+                <ul class="childList">
+                    <li class="child-item">
+                        <a href="#">管理一</a>
+                    </li>
+                    <li class="child-item">
+                        <a href="#">管理二</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navItem">
+                <a class="navLink" href="javascript:;" onclick="leftNavOpen(this);">
+                    <i class="itemIcon iconfont icon-setting inline"></i>
+                    <p class="itemName inline">系统设置管理</p>
+                    <i class="iconfont icon-down"></i>
+                </a>
+                <ul class="childList">
+                    <li class="child-item">
+                        <a href="#">管理一</a>
+                    </li>
+                    <li class="child-item">
+                        <a href="#">管理二</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div >
+    <div id="inside-navigation">
+        <div class="crumbs-navigation">
+            <i class="itemIcon iconfont icon-goods inline"></i>
+            <p class="crumbsItem">商品管理-<span>商品列表</span></p>
+        </div>
+    </div>
+    <div class="home-content" id="inside-content">
+        <div class="goods-item">
+            <div class="goods-header">
+                <div class="option-left">
+                    <div class="add-goods option-r">
+                        <i class="itemIcon iconfont icon-add inline"></i>
+                        <p>新增商品</p>
+                    </div>
+                    <div class="btn-group option-r">
+                        <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            商品状态<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a>状态-1</a></li>
+                            <li><a>状态-2</a></li>
+                            <li><a>状态-3</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group option-r">
+                        <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            商品分类<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a>分类-1</a></li>
+                            <li><a>分类-2</a></li>
+                            <li><a>分类-3</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="option-right pos-r">
+                    <div class="goods-search inline">
+                        <p>商品名称</p>
+                        <input class="goods-input" type="text" placeholder="输入商品名称" value="" />
+                    </div>
+                    <div class="pos-a btn-search">
+                        <a class="search-btn iconfont icon-search"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="goods-middle">
+                <table id="teaListTable" class="teaListTable">
+                    <thead>
+                        <tr>
+                            <th><input  type="checkbox" onclick="checkall()"/></th>
+                            <th>商品名称</th>
+                            <th>商品编号</th>
+                            <th>商品分类</th>
+                            <th>使用类型</th>
+                            <th>上架状态</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                    <tr >
+                        <td><input id="checkbox-1" type="checkbox" onclick="checkall()"/><label for="checkbox-1"></label></td>
+                        <td><img src="../images/1536238869249.jpg" alt=""><p>医疗箱</p></td>
+                        <td>sp12345678</td>
+                        <td>商品分类一</td>
+                        <td>领用</td>
+                        <td>
+                            <div class="Switch">
+                                <input type="checkbox" name="Storage" id="date" />上架<label for="date"><em></em></label>
+                            </div>
+                        </td>
+
+                        <td><a class="edit">编辑</a><a class="edit">删除</a></td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="goods-bottom"></div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script src="http://cdn.datatables.net/1.10.15/js/jquery.dataTables.js" type="text/javascript"></script>
+<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/echarts.min.js" type="text/javascript"></script>
+<script src="../js/common.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function(){
+        setHomeSize();
+        getChartData('../js/chart_data.json');
+    });
+</script>
+</body>
+</html>

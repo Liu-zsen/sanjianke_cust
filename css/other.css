@@ -1,0 +1,183 @@
+@charset "utf-8";
+/****登陆-Start****/
+/*登陆背景左侧*/
+div.login {position: absolute;left: 0;top: 0;background-color: #fff;width: 100%;height: 100%;overflow: hidden;min-width: 1024px;max-width: 1920px;}
+.circle-red{width: 48%;height: 120%;background-color: #f44f4d;border-radius: 0  100% 100% 0;position:absolute;top: -10%;left:0;z-index: 998}
+.circle-dashed{width: 54%;height: 120%;background-color: #fff;border-radius: 0  100% 100% 0;border-right: 2px dashed #d8d8d8;position:absolute;top: -10%;left:0;}
+.circle-dashed:nth-child(2){width: 52%;height: 126%;top: -13%;z-index: 994}
+.circle-dashed:nth-child(3){width: 58%;height: 140%;top: -20%;z-index: 993}
+.circle-dashed:nth-child(4){width: 64%;height: 160%;top: -30%;z-index: 992}
+.login-main{width: 57%;height:61%;position: absolute;top:50%;left: 50%;margin: -15.25% 0 0 -28.5%;box-shadow: 0 0 30px rgba(0,0,0,0.1);z-index: 999;}
+.login-img,.login-info{height: 100%;float: left;}
+.login-img{width: 47%;height: auto;margin-top: 16%;}
+/*登陆右侧输入框*/
+.login-info{width:53%;background-color: #fff;}
+img.login-logo {width: 86px;height: 86px;border: 1px solid #e1e1e1;border-radius: 50%;margin: 0 auto 18px;}
+.login-content,login-form{width: 100%;}
+.login-content {position: relative;top: 50%;margin-top: -171px;}
+.login-item {width: 303px;position: relative;margin: 0 auto 12px;}
+.login-user, .login-password {height: 32px;width: 250px;line-height: 30px;padding: 4px 5px 4px 48px;border: 0;background-color: #f4f4f4;border-radius: 22px;font-size: 14px;color: #333;outline: 0;}
+.login-item .icon-login-user, .login-item .icon-password {font-size: 16px;font-weight: bold;color: #f0cfcf;position: absolute;top: 7px;left: 18px;}
+.login-user:hover + i.iconfont,.login-password:hover + i.iconfont,.login-user:focus + i.iconfont, .login-password:focus + i.iconfont{color: #f34e4c;}
+.login-user:hover,.login-password:hover,.login-user:focus, .login-password:focus{background-color: #d1d1d1;}
+.forgot_pwd {color: #aaa;float: right;}
+.login-btn{width: 303px;cursor: pointer;margin: 12px auto;}
+.no-account-tips .register{color: #c21d2e;}
+/****登陆-End****/
+
+/*商品管理-商品列表*/
+/*商品列表-头部*/
+.goods-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.goods-item{
+    width: 100%;
+    height: 100%;
+    padding: 20px 15px 20px;
+}
+.add-goods{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 105px;
+    border-radius: 5px;
+    height:40px;
+    background:#f34e4c\0;background: -webkit-linear-gradient(left, #ce1b28 , #f55525);background: -o-linear-gradient(right, #ce1b28 , #f55525);background: -moz-linear-gradient(right, #ce1b28 , #f55525);background: linear-gradient(to right, #ce1b28 , #f55525);color: #fff;
+}
+.add-goods > p{
+    margin-left: 10px;
+    font-size: 14px;
+}
+.option-left{
+    display: flex;
+}
+.option-r{
+    margin-right: 15px;
+}
+.option-left .option-r .caret{
+    margin-left: 40px;
+}
+/* goods 搜索框 */
+.goods-search{
+    display: flex;
+    align-items: center;
+}
+.goods-search p{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border:1px solid #ccc;
+    border-right: none;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.goods-search .goods-input{
+    height: 40px;
+    line-height: 40px;
+    border:1px solid #ccc;
+    padding: 0 0 0 10px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.option-right .btn-search{
+    top: 0;
+    right: 0;
+}
+.btn-search{
+    width: 34px;
+    height: 100%;
+    line-height: 40px;
+    background: #ccc;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+.btn-search a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    vertical-align: middle;
+}
+/* 表格 */
+.teaListTable{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+.teaListTable thead{
+    background: #F6F7Fb;
+    line-height: 40px;
+    padding: 10px;
+}
+.tbody tr{
+    line-height: 65px;    border-bottom: 1px solid #F6F7Fb
+}
+.teaListTable thead tr th input,.teaListTable .tbody tr td input{
+    margin-left: 20px;
+}
+.tbody tr img{
+    display: inline-block;
+    width: 45px;
+    height: 50px;
+}
+.tbody tr p{
+    display: inline-block;
+    padding-left: 10px;
+}
+/*上架开关*/
+.Switch {
+    position: relative;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+.Switch li {
+    clear: both;
+    line-height: 44px;
+    border-bottom: 1px solid #CCC;
+    list-style: none;
+}
+.Switch input {
+    display: none
+}
+.Switch label {
+    position: absolute;
+    top: 40%;
+    margin-top: -6px;
+    margin-left: 10px;
+    width: 46px;
+    background: #CCC;
+    height: 23px;
+    border-radius: 14px;
+    float: right;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+}
+.Switch label em {
+    width: 21px;
+    height: 21px;
+    float: left;
+    margin: 1px;
+    border-radius: 13px;
+    box-shadow: 2px 3px 8px rgba(0,0,0,.1);
+    background: #FFF;
+    transition: 0.1s;
+}
+.Switch input:checked + label {
+    background: #5ad450;
+}
+.Switch input:checked + label em {
+    margin: 1px 1px 1px 24px;
+}
+.Switch input:disabled + label {
+    opacity: 0.5
+}
+.teaListTable tbody .edit{
+    padding-right:25px;
+    color:#2b94fe
+}

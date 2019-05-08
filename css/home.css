@@ -1,0 +1,81 @@
+@charset "utf-8";
+.home-top{height:35%;font-size: 0;margin: 0 auto 20px}
+.page_title{min-height: 18px;font-size: 18px;text-indent: 18px;color: #000;margin: 0 auto 20px;}
+/*代理商、设备、用户、志愿者数据*/
+.numbers{width: 66%;height:calc(100% - 5px);height:100%\9;font-size: 0;vertical-align: top;}
+.num-item{width: 18.8%;height:100%;font-size: 14px;margin: 0 1.6%;background-color: #fff;padding: 0 1.5%;border-radius: 12px;border-bottom-width: 5px;border-bottom-style: solid;-webkit-box-shadow: 0 3px 10px #eee;-moz-box-shadow: 0 3px 10px #eee;box-shadow: 0 3px 10px #eee;}
+.num-item:after{content: '';display: block;width: 100%;height: 8px;background-color: #fff;position: absolute;bottom: 0;left: 0;border-radius: 0 0 5px 5px;}
+.num-sales{border-bottom-color: #ff2726;}
+.num-sales:hover .num{color: #ff2726;}
+.num-device{border-bottom-color: #ff8226;}
+.num-device:hover .num{color: #ff8226;}
+.num-user{border-bottom-color: #4fdeb2;}
+.num-user:hover .num{color: #4fdeb2;}
+.num-ziyuan{border-bottom-color: #478cff;}
+.num-ziyuan:hover .num{color: #478cff;}
+.num-item .num {font-size: 36px;color: #000;margin: 6.1% auto 18.5%;}
+.num-item .name {font-size: 14px;color: #000;}
+.num-item .detail-link {color:#c6cee8;font-size: 14px;display: block;line-height: 18px;position: absolute;bottom: 8%;}
+.num-item .detail-link .icon-ang-right{font-size: 13px;}
+.logo-wrap{width: 56px;height: 56px;line-height: 56px;border-radius: 50%;text-align: center;margin: 10.5% 0;}
+.num-sales .logo-wrap{background-color: #ffeded;}
+.num-device .logo-wrap{background-color: #ffeee1;}
+.num-user .logo-wrap{background-color: #e7faf4;}
+.num-ziyuan .logo-wrap{background-color: #e3ecff;}
+.logo-wrap .iconfont{font-size: 28px;}
+.logo-wrap .icon-sales-num{color: #ff2726;}
+.logo-wrap .icon-device-num{color: #ff8226;}
+.logo-wrap .icon-user{color: #4fdeb2;}
+.logo-wrap .icon-ziyuan-num{color: #478cff;}
+/*功能入口*/
+.moudles{width: 34%;height: 100%;font-size: 0;vertical-align: top;margin: 0;}
+.mod{width: 24.3%;height: 45%;font-size: 14px;margin:0 3% 5%;text-align: center;padding: 0;border-radius: 12px;-webkit-box-shadow: 0 0 10px #c1c1c1;-moz-box-shadow: 0 3px 10px #c1c1c1;box-shadow: 0 0 10px #c1c1c1;}
+.mod .mod-link{display: block;width: auto;height: auto;position: relative;top: 50%;margin-top: -38px;}
+.mod .iconfont,.mod .mod-text{color:#fff;}
+.mod:hover .iconfont{font-size: 46px;}
+.mod .iconfont{font-size: 42px;line-height: 42px;}
+.mod .mod-text{font-size: 14px;line-height: 20px;margin: 12px auto 0;}
+.mod-goods{background: #ff5d38 url("../images/mod-bg1.png") center;}
+.mod-sales{background: #ffaf00 url("../images/mod-bg2.png") center;}
+.mod-orders{background: #00cf6b url("../images/mod-bg3.png") center;}
+.mod-zhishis{background: #874dd7 url("../images/mod-bg4.png") center;}
+.mod-ads{background: #408cff  url("../images/mod-bg5.png") center;}
+.mod-reports{background: #495e7f url("../images/mod-bg6.png") center;}
+/*图表*/
+.home-bottom{width: 100%;height:48.8%;margin:0 auto;font-size: 0;}
+.charts{width: 30%;height:100%;padding:0;padding:64px 0 0 0\0;margin: 0 1.5%;font-size: 12px;background-color: #fff;border-radius: 12px;-webkit-box-shadow: 0 3px 10px #eee;-moz-box-shadow: 0 3px 10px #eee;box-shadow: 0 3px 10px #eee;}
+.table-title{height: 24px;line-height: 24px;margin: 20px;margin:-44px 20px 20px\0;position: relative;}
+.charts:hover .table-title .table-name{color: #d11f27;}
+.table-name{font-size: 16px;margin-left: 18px;position: relative;}
+.table-name:before{content: '';display: block;width: 8px;height: 16px;position: absolute;left: -18px;top: 0;background-color: #d11f27;border-radius: 4px;}
+.table-unit{position: absolute;bottom: 0;right: 0;}
+.table-content{height:100%\0;height: calc(100% - 64px);}
+/*排行榜进度条*/
+.sales-table .table-content{margin:0 20px;}
+.salesRanks-item {position: relative;height:16%;margin: 1% 0 3% 40px;}
+.salesRanks-num {display: block;width: 20px;height: 18px;line-height: 18px;font-size: 18px;text-align: center;position: absolute;top: 50%;left: -30px;margin-top: -9px;}
+.salesRanks-info {font-size: 0;height: 64%;}
+.salesRanks-name, .salesRanks-data {width: 45%;font-size: 13px;line-height: 15px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin-bottom: 5px;}
+.salesRanks-data {text-align: right;width: 55%;cursor: pointer;}
+.salesRanks-data:hover {font-weight: bold;}
+.ranks-data-percent{margin-right: 16px;}
+.salesRanks-process {height: 36%;max-height:14px;background-color: #f5f7f9;border-radius: 6px;}
+.salesRanks-process-content {height: 100%;width: 50%;background-color: #f34e4c;border-radius: 6px;}
+/*小于1200的屏幕响应样式*/
+@media screen and (max-width:1200px){
+    .home-content{height: auto !important;}
+    .home-top{height: 405px;margin: 0 auto;}
+    .numbers{width: 100%;height: 240px;}
+    .num-item .num{font-size: 28px;}
+    .moudles{width: 100%;height: 120px;margin: 25px 0 20px;}
+    .mod {width: 13.6%;height: 100%;margin: 0 1.5%;padding: 0;}
+    .charts {width: 97%;margin:0 auto 20px;height: 400px;}
+    .charts.sales-table{height: 370px;}
+    .salesRanks-item {position: relative;height: 38px;margin: 0 0 20px 40px;}
+    .salesRanks-info {height: 26px;}
+    .salesRanks-process {height: 12px;}
+    .top-bar .name{display: none;}
+    .top-bar .company-info{width: 191px;}
+    .top-bar .operate-box{width: 547px;}
+    .top-bar .top-message{margin: 0 20px 0 30px;}
+}
